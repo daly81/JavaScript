@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<head>
+	<script>
+	
+	//declaring variables and created a function for the coin flip 
+	function flip() {
+		var heads = 0;
+		var tails = 0;
+		var result;
+		
+		//For loop fot the counter from 1 to 100 	
+		for(counter=1; counter<=100; counter++) {
+			//random genorator for the outcome being either 1 or 0 
+			result = Math.floor(Math.random()*2); 
+			if (result==0) {
+				heads++; 
+			} else if (result ==1) {
+				tails++;
+			}
+		//output for the user to see the result of the flips 
+		} alert("The outcome for heads is: " + heads + " The outcome for tails is: " + tails);
+	}
+	</script>
+</head>
+<body>
+	<h2>Press the button to flip a coin 100 times and see the resulting counts.</h2>
+	<p><input type="button" value="Flip" onclick="flip()"></p>
+</body>
+</html>
+	
